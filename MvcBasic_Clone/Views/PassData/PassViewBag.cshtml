@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "PassViewBag";
+
+    var nickName = ViewBag.Nickname;  // 大括弧中可以寫C#語法
+    decimal height = ViewBag.Height;
+    decimal weight = ViewBag.Weight;
+    bool married = ViewBag.Married;
+
+
+
+}
+
+<h2>PassViewBag</h2>
+
+<ul>
+    <li>@ViewBag.Nickname</li>
+    <li>@(ViewBag.Height+5)</li>
+    <li>@(ViewBag.Weight+3)</li>
+    <li>@ViewBag.Married</li>
+</ul>
+
